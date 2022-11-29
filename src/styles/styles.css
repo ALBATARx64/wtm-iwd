@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "jenna";
+  src: url("../fonts/JennaSue.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.8rem 3.8rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 1px;
+  width: 100%;
+  height: calc(100% + 8px);
+  background-image: url("https://c.top4top.io/p_2523hwlc41.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.secondary-btn {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.5rem 2.9rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+.secondary-btn::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 1px;
+  width: 100%;
+  height: calc(100% + 8px);
+  background-image: url("https://c.top4top.io/p_2523hwlc41.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar .container header {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container header img {
+  width: 220px;
+}
+.navbar .container header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navbar .container header ul li {
+  color: #717171;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.navbar .container header ul li a {
+  color: #717171;
+}
+.navbar .container header ul li:not(:last-of-type) {
+  margin-right: 2.4rem;
+}
+.navbar .container header ul li.active {
+  position: relative;
+}
+.navbar .container header ul li.active a {
+  color: #211d1e;
+}
+.navbar .container header ul li.active::after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://e.top4top.io/p_2523ldysf2.png");
+  background-size: 75%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-page .main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@-webkit-keyframes textLeftLayerAnimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes textLeftLayerAnimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes textRightLayerAnimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 68%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes textRightLayerAnimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 68%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes textAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes textAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-page .main-content .text {
+  display: grid;
+  place-items: center;
+  margin-top: 8.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  -webkit-animation-name: textAnimation;
+          animation-name: textAnimation;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.main-page .main-content .text::before {
+  content: "";
+  position: absolute;
+  top: 86%;
+  right: -15.4%;
+  width: 100%;
+  height: 210%;
+  background-image: url("https://f.top4top.io/p_2523xvhje1.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.main-page .main-content .text .left-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation-name: textLeftLayerAnimation;
+          animation-name: textLeftLayerAnimation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.main-page .main-content .text .right-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation-name: textRightLayerAnimation;
+          animation-name: textRightLayerAnimation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.main-page .main-content .text img {
+  width: 80%;
+}
+@-webkit-keyframes quoteAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+@keyframes quoteAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+.main-page .main-content .quote {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  background-color: #fff;
+  white-space: nowrap;
+  font-family: "jenna";
+  bottom: 26px;
+  left: 62px;
+  font-size: 3rem;
+  -webkit-animation-name: quoteAnimation;
+          animation-name: quoteAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+@-webkit-keyframes infoAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes infoAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.main-page .main-content .info {
+  position: absolute;
+  bottom: 10%;
+  right: 30px;
+  -webkit-animation-name: infoAnimation;
+          animation-name: infoAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.main-page .main-content .info img {
+  width: 70%;
+}
+.main-page .main-content .laptop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 125px;
+  height: 125px;
+  background-image: url("https://a.top4top.io/p_2523y7paf1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@-webkit-keyframes cardAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes cardAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-page .main-content .card {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 160px;
+  height: 190px;
+  background-image: url("https://f.top4top.io/p_2523r7yrm1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-animation-name: cardAnimation;
+          animation-name: cardAnimation;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  z-index: 100;
+}
+.main-page .main-content .main-content-main-img {
+  display: grid;
+  place-items: center;
+}
+.main-page .main-content .main-content-main-img .img-container {
+  width: 60%;
+  position: relative;
+}
+.main-page .main-content .main-content-main-img .img-container img {
+  width: 100%;
+  display: block;
+}
+.main-page .main-content .main-content-main-img .img-container::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://k.top4top.io/p_2523suvs01.png");
+  background-size: 70%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.main-page .main-content .main-content-main-img .img-container::before {
+  content: "";
+  position: absolute;
+  top: 69.22%;
+  right: -29.5%;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://b.top4top.io/p_2523jqe8q1.png");
+  background-size: 10%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.main-page .main-content .main-content-main-img .img-container .plane {
+  position: absolute;
+  top: 31%;
+  right: -61%;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://k.top4top.io/p_25236wxki1.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+.main-page .main-content .main-content-main-img .img-container .arrow {
+  position: absolute;
+  top: -45%;
+  left: -145%;
+  width: 140%;
+  height: 150%;
+  background-image: url("https://k.top4top.io/p_2523ncrom1.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}/*# sourceMappingURL=styles.css.map */
